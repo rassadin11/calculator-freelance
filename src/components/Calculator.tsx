@@ -1,0 +1,73 @@
+import React, { useState } from 'react'
+import Card from '@mui/material/Card'
+import { Typography } from '@mui/material'
+import { createTheme } from '@mui/material/styles'
+import { ThemeProvider } from '@mui/styles'
+import Result from './Result'
+import Actions from './actions/Actions'
+import operate from './computes/computeResult'
+
+const theme = createTheme({
+  typography: {
+    fontFamily: ['Museo', 'Digital Numbers', 'Montserrat'].join(','),
+  },
+})
+
+const styles = {
+  card: { maxWidth: 410, padding: '24px', background: '#F1F3F6' },
+  header: {
+    fontFamily: 'Museo',
+    fontSize: 28,
+    letterSpacing: '0.85px',
+    fontWeight: '600',
+    color: '#373A37',
+    lineHeight: '33.8px',
+    fontStyle: 'normal',
+  },
+}
+
+const Calculator = (): any => {
+  const [numbers, setNumbers] = useState<string[]>([])
+  const [signs, setSigns] = useState<string[]>([])
+  const [temporaryResult, setTemporaryResult] = useState<string>('0')
+
+  // start calculation
+  const computeOperation = () => {
+    const res = numbers
+    setNumbers([])
+    setSigns([])
+    setTemporaryResult(operate(res, signs, temporaryResult, setNumbers))
+  }
+
+  // delete all data
+  const clearNumbers = () => {
+    setNumbers([])
+    setSigns([])
+    setTemporaryResult('0')
+  }
+
+  return (
+    <ThemeProvider theme={theme}>
+      <div>
+        <Card sx={{ ...styles.card }}>
+          <Typography variant="h1" component="div" sx={{ ...styles.header }}>
+            Calculator
+          </Typography>
+          <Result result={temporaryResult} />
+          <Actions
+            setNumbers={setNumbers}
+            numbers={numbers}
+            signs={signs}
+            setSigns={setSigns}
+            temporaryResult={temporaryResult}
+            setTemporaryResult={setTemporaryResult}
+            computeOperation={computeOperation}
+            clearNumbers={clearNumbers}
+          />
+        </Card>
+      </div>
+    </ThemeProvider>
+  )
+}
+
+export default Calculator
