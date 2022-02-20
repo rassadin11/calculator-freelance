@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/rassadin11/calculator-freelance-/static/css/main.90729677.chunk.css",
+    "main.js": "/rassadin11/calculator-freelance-/static/js/main.300db728.chunk.js",
+    "main.js.map": "/rassadin11/calculator-freelance-/static/js/main.300db728.chunk.js.map",
+    "runtime-main.js": "/rassadin11/calculator-freelance-/static/js/runtime-main.2a404855.js",
+    "runtime-main.js.map": "/rassadin11/calculator-freelance-/static/js/runtime-main.2a404855.js.map",
+    "static/js/2.03ee2958.chunk.js": "/rassadin11/calculator-freelance-/static/js/2.03ee2958.chunk.js",
+    "static/js/2.03ee2958.chunk.js.map": "/rassadin11/calculator-freelance-/static/js/2.03ee2958.chunk.js.map",
+    "index.html": "/rassadin11/calculator-freelance-/index.html",
+    "static/css/main.90729677.chunk.css.map": "/rassadin11/calculator-freelance-/static/css/main.90729677.chunk.css.map",
+    "static/js/2.03ee2958.chunk.js.LICENSE.txt": "/rassadin11/calculator-freelance-/static/js/2.03ee2958.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/rassadin11/calculator-freelance-/static/media/Museo500-Regular.8c28cdf3.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a404855.js",
+    "static/js/2.03ee2958.chunk.js",
+    "static/css/main.90729677.chunk.css",
+    "static/js/main.300db728.chunk.js"
+  ]
+}
