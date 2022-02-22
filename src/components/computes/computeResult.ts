@@ -33,9 +33,13 @@ export default function (
   })
 
   setNumbers([])
+  // save expressions
+
   // check length of result
-  if (result.toString().length > 9) {
+  if (result < 10e-7) {
     return expo(String(result), 4)
+  } else if (result.toString().split('').length > 9 && result < 10e7) {
+    return String(Math.ceil(result * 10e7) / 10e7)
   }
 
   return result.toString()
