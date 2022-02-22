@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/calculator-freelance/static/css/main.5f2f1117.chunk.css",
-    "main.js": "/calculator-freelance/static/js/main.eb2c201b.chunk.js",
-    "main.js.map": "/calculator-freelance/static/js/main.eb2c201b.chunk.js.map",
-    "runtime-main.js": "/calculator-freelance/static/js/runtime-main.2a47fa94.js",
-    "runtime-main.js.map": "/calculator-freelance/static/js/runtime-main.2a47fa94.js.map",
-    "static/js/2.03ee2958.chunk.js": "/calculator-freelance/static/js/2.03ee2958.chunk.js",
-    "static/js/2.03ee2958.chunk.js.map": "/calculator-freelance/static/js/2.03ee2958.chunk.js.map",
-    "index.html": "/calculator-freelance/index.html",
-    "static/css/main.5f2f1117.chunk.css.map": "/calculator-freelance/static/css/main.5f2f1117.chunk.css.map",
-    "static/js/2.03ee2958.chunk.js.LICENSE.txt": "/calculator-freelance/static/js/2.03ee2958.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/calculator-freelance/static/media/Museo500-Regular.8c28cdf3.woff2"
+    "main.css": "/rassadin11/calculator-freelance-/static/css/main.9293358c.chunk.css",
+    "main.js": "/rassadin11/calculator-freelance-/static/js/main.ae2ed6eb.chunk.js",
+    "main.js.map": "/rassadin11/calculator-freelance-/static/js/main.ae2ed6eb.chunk.js.map",
+    "runtime-main.js": "/rassadin11/calculator-freelance-/static/js/runtime-main.2a404855.js",
+    "runtime-main.js.map": "/rassadin11/calculator-freelance-/static/js/runtime-main.2a404855.js.map",
+    "static/js/2.34d25000.chunk.js": "/rassadin11/calculator-freelance-/static/js/2.34d25000.chunk.js",
+    "static/js/2.34d25000.chunk.js.map": "/rassadin11/calculator-freelance-/static/js/2.34d25000.chunk.js.map",
+    "index.html": "/rassadin11/calculator-freelance-/index.html",
+    "static/css/main.9293358c.chunk.css.map": "/rassadin11/calculator-freelance-/static/css/main.9293358c.chunk.css.map",
+    "static/js/2.34d25000.chunk.js.LICENSE.txt": "/rassadin11/calculator-freelance-/static/js/2.34d25000.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/rassadin11/calculator-freelance-/static/media/Museo500-Regular.8c28cdf3.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.2a47fa94.js",
-    "static/js/2.03ee2958.chunk.js",
-    "static/css/main.5f2f1117.chunk.css",
-    "static/js/main.eb2c201b.chunk.js"
+    "static/js/runtime-main.2a404855.js",
+    "static/js/2.34d25000.chunk.js",
+    "static/css/main.9293358c.chunk.css",
+    "static/js/main.ae2ed6eb.chunk.js"
   ]
 }
