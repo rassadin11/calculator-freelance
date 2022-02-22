@@ -62,9 +62,17 @@ export default function Actions({
   clearNumbers,
 }: Props): JSX.Element {
   const { button, containedButton, largeButton } = useStyles()
+
   const sendNumber = (operator: string) => {
     setTemporaryResult('')
-    setNumbers([...numbers, temporaryResult])
+    if (temporaryResult !== '') setNumbers([...numbers, temporaryResult])
+
+    if (signs.length + 1 > numbers.length) {
+      signs.pop()
+      setSigns([...signs, operator])
+      return
+    }
+
     setSigns([...signs, operator])
   }
 

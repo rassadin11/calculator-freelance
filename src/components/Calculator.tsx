@@ -31,6 +31,10 @@ const Calculator = (): JSX.Element => {
   const [signs, setSigns] = useState<string[]>([])
   const [temporaryResult, setTemporaryResult] = useState<string>('0')
 
+  React.useEffect(() => {
+    console.log(temporaryResult, signs, numbers)
+  }, [temporaryResult, signs])
+
   // start calculation
   const computeOperation = () => {
     setTemporaryResult(operate(numbers, signs, temporaryResult, setNumbers))

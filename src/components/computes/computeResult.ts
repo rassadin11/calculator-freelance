@@ -1,4 +1,5 @@
 /* eslint-disable  @typescript-eslint/no-explicit-any */
+import { setOperations } from '../../api/Api'
 import expo from './Devision'
 
 export default function (
@@ -9,7 +10,9 @@ export default function (
 ): string {
   numbers.push(temp_result)
 
+  const allNumbers = [...numbers]
   let result: number = +numbers[0]
+
   numbers.shift()
 
   // compute result
@@ -32,12 +35,17 @@ export default function (
       result = result / +numb
     }
   })
-
-  setNumbers([])
   // save expressions
-
+  setOperations(allNumbers, operations, String(result))
+  setNumbers([])
   // check length of result
-  if (result <= 10e-7) {
+
+  if (result === 0) {
+    return '0'
+  } else if (
+    (result <= 10e-7 && result > 0) ||
+    (result >= -10e-7 && result < 0)
+  ) {
     return expo(String(result), 4)
   } else if (result.toString().split('').length >= 9 && result < 10e7) {
     return String(Math.ceil(result * 10e7) / 10e7)
