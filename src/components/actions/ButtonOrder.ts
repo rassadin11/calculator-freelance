@@ -1,43 +1,11 @@
-import { makeStyles } from '@mui/styles'
 import { Signs } from '../computes/enums'
 import { IButtonOrder } from './interfaces'
 
-const useStyles = makeStyles({
-  button: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    display: 'flex',
-    height: '79.46px',
-    background: '#F1F3F6',
-    boxShadow: '-5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1)',
-    borderRadius: '20px',
-    margin: '0 7.5px 15px',
-    marginTop: '10px',
-    flex: '0 0 20%',
-    fontFamily: 'Montserrat',
-    fontWeight: 'bold',
-    fontSize: '29px',
-    color: '#3A4E89',
-    cursor: 'pointer',
-    transition: 'all .3s ease',
-
-    '&:hover': {
-      boxShadow: '-5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.4)',
-    },
-  },
-  largeButton: {
-    flex: '0 0 calc(40% + 25px)',
-  },
-  containedButton: {
-    background: '#3A4E89',
-    color: '#fff',
-    fontSize: '29px',
-  },
-})
-
-export function ButtonOrder(): IButtonOrder[] {
-  const { button, containedButton, largeButton } = useStyles()
-
+export function ButtonOrder(
+  button: any,
+  containedButton: any,
+  largeButton: any
+): IButtonOrder[] {
   return [
     {
       button,

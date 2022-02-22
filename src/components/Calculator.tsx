@@ -33,10 +33,8 @@ const Calculator = (): any => {
 
   // start calculation
   const computeOperation = () => {
-    const res = numbers
-    setNumbers([])
+    setTemporaryResult(operate(numbers, signs, temporaryResult, setNumbers))
     setSigns([])
-    setTemporaryResult(operate(res, signs, temporaryResult, setNumbers))
   }
 
   // delete all data

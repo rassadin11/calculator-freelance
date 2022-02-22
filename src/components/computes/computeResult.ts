@@ -33,11 +33,10 @@ export default function (
   })
 
   setNumbers([])
-  let res = ''
   // check length of result
   if (result.toString().length > 9) {
-    res = expo(String(result), 4)
+    return expo(String(result), 4)
   }
 
-  return res.toString()
+  return result.toString()
 }
