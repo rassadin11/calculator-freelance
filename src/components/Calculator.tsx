@@ -26,7 +26,7 @@ const styles = {
   },
 }
 
-const Calculator = (): any => {
+const Calculator = (): JSX.Element => {
   const [numbers, setNumbers] = useState<string[]>([])
   const [signs, setSigns] = useState<string[]>([])
   const [temporaryResult, setTemporaryResult] = useState<string>('0')

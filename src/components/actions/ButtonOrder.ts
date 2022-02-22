@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 import { Signs } from '../computes/enums'
 import { IButtonOrder } from './interfaces'
 

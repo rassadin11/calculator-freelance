@@ -24,18 +24,23 @@ const Result = ({ result }: Props): JSX.Element => {
 
   return (
     <ThemeProvider theme={theme}>
-      <div>
+      <div
+        style={{
+          padding: '20px',
+          background: 'linear-gradient(92.94deg, #CAD4C5 0%, #B2BFA5 100%)',
+          boxShadow: 'inset 0px 0px 9px rgba(0, 0, 0, 0.25)',
+          borderRadius: '10px',
+          marginTop: '24px',
+        }}
+      >
         <div
           style={{
             fontSize: 42,
-            marginTop: '24px',
             fontFamily: 'Digital Numbers',
             lineHeight: 1,
             height: '100%',
-            padding: '22px',
-            background: 'linear-gradient(92.94deg, #CAD4C5 0%, #B2BFA5 100%)',
-            boxShadow: 'inset 0px 0px 9px rgba(0, 0, 0, 0.25)',
-            borderRadius: '10px',
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
           }}
         >
           {numbers.map((numb) => (
